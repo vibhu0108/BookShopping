@@ -1,0 +1,41 @@
+﻿@model Project_Ecomm_Offical.Models.CoverType
+@{
+    ViewData["Title"] = "Upsert";
+    var title = Model.Id != 0 ? "Edit" : "New CoverType";
+    
+}
+<form method="post">
+    <div class=" row">
+        <div asp-validation-summary="ModelOnly" class=" col-10 border-bottom">
+            <h2 class=" text-primary">@title</h2>
+        </div> 
+        <div class=" col-8">
+            <div class=" form-group row p-2 m-2">
+                <div class=" col-4">
+                    <label asp-for="Name"></label>
+                </div>
+                <div class=" col-8">
+                    <input asp-for="Name" class=" form-control" />
+                    <span asp-validation-for="Name" class=" text-danger"></span>
+                </div>
+            </div>
+            <div class=" form-group row p-2 m-2 ">
+                <div class=" col-8 offset-4">
+                    @if (Model.Id!=0)
+                    {
+                        <partial name="_EditAndBackToListButton"/>
+                    }
+                    else
+                    {
+                        <partial name="_CreateAndBackToListButton"/>   
+                    }
+                </div>
+            </div>
+        </div>
+         
+    </div>
+</form>
+@section scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

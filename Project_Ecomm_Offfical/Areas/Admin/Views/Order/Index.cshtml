@@ -1,0 +1,27 @@
+﻿@model Project_Ecomm_Offical.Models.OrderHeader
+<div class="row">
+    <div class=" col-9">
+        <h2 class=" text-primary ">All Order</h2>
+    </div>
+    <div class=" col-3 ">
+        <button class=" btn btn-danger ">Close</button>
+    </div>
+</div>
+<div class=" border p-1 m-2">
+    <table id="tblData" class=" table table-bordered table-active table-striped">
+        <thead>
+            <tr>
+                <th>Order Id</th>
+                <th>Order Date</th>
+                <th>Name</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+    {
+    <script src="~/js/Order.js"></script>
+}

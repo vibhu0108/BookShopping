@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Project_Ecomm_Offical.Models": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51185;http://localhost:51186"
+    }
+  }
+}

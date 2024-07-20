@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Project_Ecomm_Offical.Utility": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51183;http://localhost:51187"
+    }
+  }
+}
