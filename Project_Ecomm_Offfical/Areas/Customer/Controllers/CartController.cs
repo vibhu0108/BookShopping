@@ -16,7 +16,7 @@ namespace Project_Ecomm_Offical.Areas.Customer
         private readonly IUnitOfWork _unitOfWork;
         public CartController(IUnitOfWork unitOfWork)
         {
-                _unitOfWork = unitOfWork;
+              _unitOfWork = unitOfWork;
         }
         [BindProperty]
         public ShoppingCartVM ShoppingCartVM { get; set; }
